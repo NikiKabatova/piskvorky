@@ -37,3 +37,26 @@ img {
   display: flex;
   flex-direction: column;
 }
+
+.card__buttons-rules {
+  background-color: #1fcca4;
+  border-bottom: 1px solid #283e50;
+  padding: 20px 0;
+}
+
+.card__buttons-play {
+  background-color: #0197f6;
+  padding: 20px 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.card__buttons-rules:hover {
+  background-color: #1cbb96;
+}
+.card__buttons-play:hover {
+  background-color: #0090e9;
+}
