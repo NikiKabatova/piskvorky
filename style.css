@@ -15,3 +15,25 @@ h1 {
   font-family: 'Lobster', cursive;
   font-size: 40px;
 }
+img {
+  width: 360px;
+  border-radius: 5px 5px 0 0;
+}
+
+.card {
+  position: relative;
+  background-color: #283e50;
+  width: 360px;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  margin-top: 50px;
+}
+
+.card__info {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.card__buttons {
+  display: flex;
+  flex-direction: column;
+}
