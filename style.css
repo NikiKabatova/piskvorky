@@ -63,10 +63,10 @@ a {
   height: 1rem;
   filter: invert(100%);
 }
-ol {
+.card__rules {
   padding-inline-start: 30px;
   padding-inline-end: 5px;
 }
-img {
+.samples__instruction {
   max-width: 100%;
 }
