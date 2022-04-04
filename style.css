@@ -109,7 +109,7 @@ figcaption {
 
 @media (min-width: 1000px) {
   .card__rules {
-    width: 800px;
+    width: 900px;
   }
   figure {
     width: 46%;
