@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
   background: linear-gradient(#615dad, #ffc8da) no-repeat fixed;
   height: 100%;
@@ -11,6 +16,7 @@ body {
 h1 {
   font-family: 'Lobster', cursive;
   font-size: 40px;
+  margin-top: 10px;
 }
 #uvodka {
   width: 360px;
@@ -18,17 +24,21 @@ h1 {
 }
 
 .card {
-  /* position: relative;*/
   background-color: #283e50;
   width: 360px;
   text-align: center;
   border-radius: 5px 5px 0 0;
   margin-top: 50px;
+  margin-bottom: 25px;
 }
 
 .card__info {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.card__info p {
+  margin: 15px 5px;
 }
 .card__buttons {
   display: flex;
@@ -66,21 +76,43 @@ a {
 .info__rules {
   padding-inline-start: 30px;
   padding-inline-end: 5px;
+  text-align: left;
 }
+
 .samples__instruction {
   width: 100%;
 }
+figure {
+  margin: 10px;
+}
 
-@media (min-width: 700px) {
+.title {
+  margin: 40px;
+}
+
+figcaption {
+  margin-bottom: 30px;
+}
+@media (min-width: 750px) {
   .card__rules {
-    width: 800px;
+    width: 700px;
   }
   .card__samples {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   figure {
-    width: 40%;
+    width: 46%;
   }
-} ;
+}
+
+@media (min-width: 1000px) {
+  .card__rules {
+    width: 800px;
+  }
+
+  figure {
+    width: 46%;
+  }
+}
