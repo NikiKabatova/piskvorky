@@ -121,7 +121,6 @@ figcaption {
   display: flex;
   flex-direction: column;
   max-width: 80vmin;
-  margin-top: 60px;
 }
 
 .game__title {
@@ -130,7 +129,6 @@ figcaption {
 
 .game__info {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
@@ -167,7 +165,7 @@ figcaption {
   flex-wrap: wrap;
   width: 100%;
   border: 1px solid black;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .game__field button {
