@@ -68,7 +68,7 @@ a {
 .card__buttons-play:hover {
   background-color: #0090e9;
 }
-
+/*2. UKOL*/
 .info__title {
   margin: 40px;
 }
@@ -116,7 +116,7 @@ figcaption {
     width: 46%;
   }
 }
-/*3. ukol*/
+/*3. UKOL*/
 .game {
   display: flex;
   flex-direction: column;
@@ -183,4 +183,11 @@ figcaption {
 .game__field button:focus {
   background: white;
   opacity: 60%;
+}
+
+/*4. UKOL*/
+.board__field--circle {
+  background-image: url(images/circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
