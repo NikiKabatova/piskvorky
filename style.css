@@ -191,3 +191,9 @@ figcaption {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.board__field--cross {
+  background-image: url(images/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

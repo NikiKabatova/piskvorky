@@ -1,8 +1,14 @@
 console.log('Funguju!');
-const itsYourTurn = 'circle';
+
+let itsYourTurn = 'circle';
 
 const move = (event) => {
+  //if (itsYourTurn === 'circle') {
   event.target.classList.add('board__field--circle');
+  //} else {
+  //  event.target.classList.add('board__field--cross');
+  //}
+  console.log(event);
 };
 
 const buttons = document.querySelectorAll('button');
