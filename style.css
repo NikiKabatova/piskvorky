@@ -176,13 +176,9 @@ figcaption {
   border: 1px solid black;
 }
 .game__field button:hover {
-  background: white;
-  opacity: 60%;
 }
 
 .game__field button:focus {
-  background: white;
-  opacity: 60%;
 }
 
 /*4. UKOL*/
