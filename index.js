@@ -1,13 +1,14 @@
 let itsYourTurn = 'circle';
-let currentPlayer = document.getElementById('currentPlayer');
-
+const turn = document.querySelector('#turn');
 const move = (event) => {
   if (itsYourTurn === 'circle') {
     event.target.classList.add('board__field--circle');
     itsYourTurn = 'cross';
+    turn.src = 'images/cross.svg';
   } else {
     itsYourTurn = 'circle';
     event.target.classList.add('board__field--cross');
+    turn.src = 'images/circle.svg';
   }
   console.log(event);
 };

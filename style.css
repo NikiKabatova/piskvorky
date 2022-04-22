@@ -175,11 +175,6 @@ figcaption {
   aspect-ratio: 1 / 1;
   border: 1px solid black;
 }
-.game__field button:hover {
-}
-
-.game__field button:focus {
-}
 
 /*4. UKOL*/
 .board__field--circle {
