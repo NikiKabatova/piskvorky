@@ -169,22 +169,28 @@ figcaption {
 }
 
 .game__field button {
-  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: 50%;
   width: 10%;
   aspect-ratio: 1 / 1;
   border: 1px solid black;
 }
+.game__field button:hover {
+  background-color: white;
+  opacity: 50%;
+}
+
+.game__field button:focus {
+  border: solid 1px black;
+  border-radius: 5px;
+}
 
 /*4. UKOL*/
 .board__field--circle {
   background-image: url(images/circle.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .board__field--cross {
   background-image: url(images/cross.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }

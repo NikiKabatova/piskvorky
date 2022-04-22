@@ -1,11 +1,14 @@
 let itsYourTurn = 'circle';
 const turn = document.querySelector('#turn');
+
 const move = (event) => {
   if (itsYourTurn === 'circle') {
+    event.target.disabled = true;
     event.target.classList.add('board__field--circle');
     itsYourTurn = 'cross';
     turn.src = 'images/cross.svg';
   } else {
+    event.target.disabled = true;
     itsYourTurn = 'circle';
     event.target.classList.add('board__field--cross');
     turn.src = 'images/circle.svg';
