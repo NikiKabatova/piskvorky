@@ -167,18 +167,21 @@ figcaption {
   border: 1px solid black;
   margin-top: 10px;
 }
-
+/*toto upravuji pro tranzition*/
 .game__field button {
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 50%;
+  opacity: 40%;
   width: 10%;
   aspect-ratio: 1 / 1;
   border: 1px solid black;
+  background-size: 13px;
+  transition: 0.5s;
 }
 .game__field button:hover {
   background-color: white;
-  opacity: 50%;
+  opacity: 55%;
 }
 
 .game__field button:focus {
@@ -187,10 +190,12 @@ figcaption {
 }
 
 /*4. UKOL*/
-.board__field--circle {
+.game__field .board__field--circle {
   background-image: url(images/circle.svg);
+  background-size: 24px;
 }
 
-.board__field--cross {
+.game__field .board__field--cross {
   background-image: url(images/cross.svg);
+  background-size: 24px;
 }
