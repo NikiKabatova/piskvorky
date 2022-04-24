@@ -177,7 +177,7 @@ figcaption {
   aspect-ratio: 1 / 1;
   border: 1px solid black;
   background-size: 13px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .game__field button:hover {
   background-color: white;
@@ -192,10 +192,10 @@ figcaption {
 /*4. UKOL*/
 .game__field .board__field--circle {
   background-image: url(images/circle.svg);
-  background-size: 24px;
+  background-size: 28px;
 }
 
 .game__field .board__field--cross {
   background-image: url(images/cross.svg);
-  background-size: 24px;
+  background-size: 28px;
 }
