@@ -20,3 +20,12 @@ const buttons = document.querySelectorAll('.game__field button');
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', move);
 }
+
+const getSymbol = (field) => {
+  if (field.classList.contains('board__field--cross')) {
+    return 'cross';
+  } else if (field.classList.contains('board__field--circle')) {
+    return 'circle';
+  }
+};
+console.log(getSymbol);
