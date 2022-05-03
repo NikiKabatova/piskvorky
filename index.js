@@ -1,5 +1,4 @@
 const getSymbol = (field) => {
-  console.log('promenna getSymbol', field);
   if (field.classList.contains('board__field--cross')) {
     return 'cross';
   } else if (field.classList.contains('board__field--circle')) {
@@ -8,10 +7,10 @@ const getSymbol = (field) => {
 };
 
 const boardSize = 10;
-const fields = document.querySelectorAll('.game__field');
+const fields = document.querySelectorAll('.game__field--btn');
 
 const getField = (row, column) => {
-  return fields[row * boardSize * column];
+  return fields[row * boardSize + column];
 };
 
 const getPosition = (field) => {
@@ -28,7 +27,6 @@ const getPosition = (field) => {
 
 const symbolsToWin = 5;
 const isWinningMove = (field) => {
-  console.log('promenna isWinningMove', field);
   const origin = getPosition(field);
   const symbol = getSymbol(field);
 
@@ -99,5 +97,3 @@ const buttons = document.querySelectorAll('.game__field button');
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', move);
 }
-
-// 5. úkol piskvorky
