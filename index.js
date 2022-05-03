@@ -1,8 +1,8 @@
 const getSymbol = (field) => {
   if (field.classList.contains('board__field--cross')) {
-    return 'cross';
+    return 'křížkem';
   } else if (field.classList.contains('board__field--circle')) {
-    return 'circle';
+    return 'kolečkem';
   }
 };
 
@@ -91,9 +91,17 @@ const move = (event) => {
 
   const resultIsWinningMove = isWinningMove(event.target);
   console.log(resultIsWinningMove);
+
+  const winningPlayer = isWinningMove(event.target);
+  if (winningPlayer) {
+    const symbol = getSymbol(event.target);
+    if (confirm(`Hráč s ${symbol} vyhrál. Chcete hrát znovu?`) === true) {
+      location.reload();
+    }
+  }
 };
 
-const buttons = document.querySelectorAll('.game__field button');
-for (let i = 0; i < buttons.length; i += 1) {
-  buttons[i].addEventListener('click', move);
+const gameFieldBtn = document.querySelectorAll('.game__field--btn');
+for (let i = 0; i < gameFieldBtn.length; i += 1) {
+  gameFieldBtn[i].addEventListener('click', move);
 }

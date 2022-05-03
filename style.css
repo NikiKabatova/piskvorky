@@ -170,7 +170,6 @@ figcaption {
 }
 /*toto upravuji pro tranzition*/
 .game__field button {
-  background-color: white;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 40%;
@@ -184,16 +183,18 @@ figcaption {
 .game__field button:hover,
 :focus {
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 /*4. UKOL*/
 .game__field .board__field--circle {
   background-image: url(images/circle.svg);
-  background-size: 1.7rem;
+  background-size: 60%;
+  opacity: 1;
 }
 
 .game__field .board__field--cross {
   background-image: url(images/cross.svg);
-  background-size: 1.7rem;
+  background-size: 60%;
+  opacity: 1;
 }
