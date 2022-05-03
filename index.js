@@ -89,9 +89,6 @@ const move = (event) => {
     turn.src = 'images/circle.svg';
   }
 
-  const resultIsWinningMove = isWinningMove(event.target);
-  console.log(resultIsWinningMove);
-
   const winningPlayer = isWinningMove(event.target);
   if (winningPlayer) {
     const symbol = getSymbol(event.target);
@@ -99,6 +96,7 @@ const move = (event) => {
       location.reload();
     }
   }
+  console.log(winningPlayer);
 };
 
 const gameFieldBtn = document.querySelectorAll('.game__field--btn');
