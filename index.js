@@ -92,10 +92,14 @@ const move = (event) => {
   const winningPlayer = isWinningMove(event.target);
   if (winningPlayer) {
     const symbol = getSymbol(event.target);
-    if (confirm(`Hráč s ${symbol} vyhrál. Chcete hrát znovu?`) === true) {
-      location.reload();
-    }
+
+    setTimeout(function () {
+      if (confirm(`Hráč s ${symbol} vyhrál. Chcete hrát znovu?`) === true) {
+        location.reload();
+      }
+    }, 200);
   }
+
   console.log(winningPlayer);
 };
 
